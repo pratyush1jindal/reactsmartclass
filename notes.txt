@@ -1,0 +1,13 @@
+using invertTheme in header typescript file to invert the theme upon invoking a change in the state variable
+
+theme component is made to select the theme for all react child components : this works by importing the css files for both light and dark themes in 
+different tsx files and then using them in the typescript file named type selector which will take the child react components as props and render the respective themes
+
+actually we are changing the theme from header.tsx and updating the value in the local storage and 
+that value determines the theme applied as all the code in app.tsx is wrapped in ThemeSelectortag
+
+breadCrumbs function is created to change the upper lining which shows like dasboard->create meetings->create one on one
+
+generatemeetingid.ts is made in util folder to generate a meeting id 
+    it has const char given a array of arbitrary value and then a for loop is called which generates a array of 8 chars from the char array using math.random function to select chars from the array
+
